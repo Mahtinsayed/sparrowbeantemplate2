@@ -6,7 +6,7 @@ from streamlit_pandas_profiling import st_profile_report
 
 # Web App Title
 st.markdown('''
-# **The EDA App**
+# **Sparrowbean Earning vs Expense Template**
 
 This is the **EDA App** created in Streamlit using the **pandas-profiling** library.
 
@@ -16,7 +16,7 @@ This is the **EDA App** created in Streamlit using the **pandas-profiling** libr
 ''')
 
 # Upload CSV data
-with st.sidebar.header('1. Upload your CSV data'):
+with st.sidebar.header('1. Upload your financial data in CSV format'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
     st.sidebar.markdown("""
 [Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
