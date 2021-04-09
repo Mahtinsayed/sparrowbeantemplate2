@@ -8,13 +8,6 @@ from streamlit_pandas_profiling import st_profile_report
 st.markdown('''
 # **Sparrowbean Earning vs Expense Template**
 
-This is the **EDA App** created in Streamlit using the **pandas-profiling** library.
-
-**Credit:** App built in `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
-
----
-''')
-
 # Upload CSV data
 with st.sidebar.header('1. Upload your financial data in CSV format'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
